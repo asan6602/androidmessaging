@@ -39,7 +39,13 @@ class Login : AppCompatActivity() {
             val email = edtEmail.text.toString()
             val password = edtPassword.text.toString()
 
-            login(email, password);
+            //checks if user left fields empty
+            if(email.isNullOrEmpty() || password.isNullOrEmpty()) {
+                Toast.makeText(this@Login, "Some fields are empty", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                login(email, password);
+            }
         }
     }
 
