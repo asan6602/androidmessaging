@@ -82,6 +82,7 @@ class SignUp : AppCompatActivity() {
 
                     //redirect
                     val intent = Intent(this@SignUp, MainActivity::class.java)
+                    finish()
                     startActivity(intent)
                 } else {
                     Toast.makeText(this@SignUp, "Some error occurred", Toast.LENGTH_SHORT).show()
