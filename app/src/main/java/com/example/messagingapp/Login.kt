@@ -27,6 +27,7 @@ class Login : AppCompatActivity() {
         btnLogin = findViewById(R.id.btnLogin)
         btnSignUp = findViewById(R.id.btnSignUp)
 
+        supportActionBar?.hide()
 
         //redirect to sign up page
         btnSignUp.setOnClickListener {

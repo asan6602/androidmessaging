@@ -31,6 +31,8 @@ class SignUp : AppCompatActivity() {
         btnLogin = findViewById(R.id.btnLogin)
         btnSignUp = findViewById(R.id.btnSignUp)
 
+        supportActionBar?.hide()
+
         btnSignUp.setOnClickListener {
             val email = edtEmail.text.toString()
             val password = edtPassword.text.toString()
